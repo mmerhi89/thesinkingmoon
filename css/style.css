@@ -987,7 +987,7 @@ footer a.logo {
   top: 0;
   padding-left: 70%;
   overflow: hidden;
-  display: inline;
+  display: inline-block;
 }
 #intro .img-container figure {
   width: 30%;
