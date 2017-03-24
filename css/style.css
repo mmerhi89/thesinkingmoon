@@ -1,0 +1,1011 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1,
+.h1, h2, .h2, h3, .h3, h4, h5, h6, .h4, .h5, .h6, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, footer, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, footer, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background-color: white;
+}
+
+::-moz-selection {
+  background-color: white;
+}
+
+.preload * {
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+#wrapper {
+  display: block;
+}
+
+html.js #wrapper {
+  display: none;
+}
+
+.span6 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+.span6.last {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .span6 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.span5 {
+  width: 82.77592%;
+  float: left;
+  margin-right: 3.34448%;
+}
+.span5.last {
+  width: 82.77592%;
+  float: right;
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .span5 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.span4 {
+  width: 65.55184%;
+  float: left;
+  margin-right: 3.34448%;
+}
+.span4.last {
+  width: 65.55184%;
+  float: right;
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .span4 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .span4.last {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+.row {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.row:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 768px) {
+  .row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.inner {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media screen and (max-width: 768px) {
+  .inner {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .inner {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 42%;
+  }
+}
+
+body,
+input,
+textarea,
+button,
+.btn,
+.btn-primary,
+.btn-question,
+select {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.8rem;
+  line-height: 1.4em;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, h5, h6, .h4, .h5, .h6 {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.25em;
+  display: block;
+  color:#ffffff;
+}
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, h5 a, h6 a, .h4 a, .h5 a, .h6 a {
+  text-decoration: none;
+  font-weight: inherit;
+  color: inherit;
+}
+
+em, i, .italic {
+  font-style: italic;
+}
+
+.question h1, .question .h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 550px) {
+  .question h1, .question .h1 {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .question h1, .question .h1 {
+    font-size: 3.2rem;
+  }
+}
+
+h1, .h1 {
+  font-size: 4.0rem;
+  margin: 0 0 60px 0;
+}
+h1 a, .h1 a {
+  display: inline-block;
+  line-height: 0.75em;
+  border-bottom: 1px solid #000;
+}
+h1 a:hover, .h1 a:hover, h1 a:focus, .h1 a:focus {
+  border: none;
+}
+h1.big, .big.h1 {
+  font-family: "Courier New", Courier, monospace
+  text-transform: uppercase;
+  font-size: 7.8rem;
+  line-height: 1em;
+}
+@media screen and (max-width: 1440px) {
+  h1.big, .big.h1 {
+    font-size: 5.6rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  h1.big, .big.h1 {
+    font-size: 4.0rem;
+  }
+}
+
+h2, .h2 {
+  font-size: 2.8rem;
+  line-height: 1.25em;
+  margin: 0 0 60px 0;
+  color: rgba(2, 19, 26, 0.99);
+
+}
+
+h3, .h3 {
+  font-size: 2.8rem;
+  line-height: 1.25em;
+  margin: 0 0 20px 0;
+}
+
+h4, .h4 {
+  font-size: 2.0rem;
+  font-weight: 500;
+  margin: 0 0 0px 0;
+}
+
+ h5, h6, .h5, .h6 {
+  font-size: 2.0rem;
+}
+
+p {
+  font-weight: 400;
+  margin: 0 0 40px 0;
+  color:#ffffff;
+  text-align: justify;
+  width: 700px;
+}
+p img {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background: transparent;
+  -moz-transition: border 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), background 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: border 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), background 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: border 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), background 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: border 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), background 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+p a, span a {
+  border-bottom: 1px solid #000;
+}
+p a:hover, p a:focus, span a:hover, span a:focus {
+  border: none;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+span,
+aside,
+li {
+  font-family: "Courier New", Courier, monospace;
+ color:#ffffff;
+}
+
+h2 span, .h2 span {
+  font-family:"Courier New", Courier, monospace;
+  font-size: 0.9em;
+}
+
+  }
+}
+button, .btn,
+.btn-primary,
+.btn-question {
+  display: inline-block;
+  position: relative;
+  overflow: visible;
+  width: auto;
+  height: 66px;
+  margin: 0;
+  padding: 0 22px;
+  line-height: 66px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  -moz-transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@media screen and (max-width: 768px) {
+  button, .btn,
+  .btn-primary,
+  .btn-question {
+    height: calc(66px / 1.25 );
+    line-height: calc(66px / 1.25 );
+    padding: 0 calc(22px / 1.25 );
+    margin-bottom: 1px;
+  }
+}
+
+.btn,
+.btn-primary,
+.btn-question {
+  border: 1px solid #000;
+  font-family: "Courier New", Courier, monospace;
+}
+.btn:hover, .btn:focus,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-question:hover,
+.btn-question:focus {
+  background: #000;
+  color: #fff;
+}
+
+.btn-open-closed {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 59px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transform-origin: center center 50%;
+  -ms-transform-origin: center center 50%;
+  -webkit-transform-origin: center center 50%;
+  transform-origin: center center 50%;
+}
+@media screen and (max-width: 768px) {
+  .btn-open-closed {
+    width: calc(30px / 1.25 );
+    height: calc(30px / 1.25 );
+    top: 45px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn-open-closed {
+    width: calc(30px / 1.5 );
+    height: calc(30px / 1.5 );
+    top: 38px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .btn-open-closed {
+    width: calc(30px / 1.8 );
+    height: calc(30px / 1.8 );
+    top: 37px;
+  }
+}
+.btn-open-closed .line {
+  width: 30px;
+  height: 5px;
+  background-color: #000;
+  position: absolute;
+  top: 12px;
+}
+@media screen and (max-width: 768px) {
+  .btn-open-closed .line {
+    width: calc(30px / 1.25 );
+    height: calc(5px / 1.25 );
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn-open-closed .line {
+    width: calc(30px / 1.5 );
+    height: calc(5px / 1.5 );
+  }
+}
+@media screen and (max-width: 400px) {
+  .btn-open-closed .line {
+    width: calc(30px / 1.8 );
+    height: calc(5px / 1.8 );
+  }
+}
+.btn-open-closed .line:nth-child(1) {
+  top: 12px;
+}
+.btn-open-closed .line:nth-child(2) {
+  top: 12px;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+input,
+select {
+  height: 66px;
+}
+
+input,
+textarea,
+select {
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -webkit-user-select: text;
+  user-select: text;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -moz-transition: border 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: border 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: border 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: border 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+button, .btn,
+.btn-primary,
+.btn-question {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0 0 80px 0;
+}
+ul li {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  margin-bottom: -2px;
+  margin-top: 1px;
+  position: relative;
+  -moz-transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+ul li a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 10px 0;
+}
+ul li .arrow {
+  position: absolute;
+  top: 0;
+  right: 25%;
+  width: 50px;
+  height: 100%;
+  background: url("../img/arrow.svg") no-repeat center center;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+@media screen and (max-width: 1024px) {
+  ul li .arrow {
+    right: 0;
+  }
+}
+ul li:hover .arrow {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+ul div.is-opened li .arrow {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+ul div:first-child li {
+  border-top: 1px solid black;
+}
+ul div:first-child.faded li {
+  border-top: 1px solid black;
+}
+ul div:last-child li {
+  border-bottom: 1px solid black;
+}
+ul div:last-child.faded li {
+  border-bottom: 1px solid black;
+}
+
+header, footer {
+  height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+@media screen and (max-width: 768px) {
+  header, footer {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 480px) {
+  header, footer {
+    height: 100px;
+  }
+}
+header a, footer a {
+  margin-top: 41px !important;
+}
+@media screen and (max-width: 768px) {
+  header a, footer a {
+    margin-top: 33px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  header a, footer a {
+    margin-top: 27px !important;
+  }
+}
+header a.logo, footer a.logo {
+  max-width: 200px;
+  width: 50%;
+  float: left;
+  margin-right: 3.34448%;
+}
+@media screen and (max-width: 480px) {
+  header a.logo, footer a.logo {
+    max-width: 58px;
+  }
+}
+header a.logo svg, footer a.logo svg {
+  width: 100%;
+}
+
+header a.btn, footer a.btn {
+  float: right;
+}
+
+section {
+  border-bottom: 2px solid rgba(2, 19, 26, 0.99);
+  position: relative;
+}
+section .question {
+  height: 150px;
+  width: 100%;
+  margin: 0;
+  padding-top: 50px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  section .question {
+    height: calc(150px / 1.25);
+    padding-top: calc(50px / 1.25);
+  }
+}
+@media screen and (max-width: 550px) {
+  section .question {
+    padding-top: calc(54px / 1.25);
+  }
+}
+@media screen and (max-width: 480px) {
+  section .question {
+    height: calc(150px / 1.5);
+    padding-top: calc(52px / 1.5);
+  }
+}
+@media screen and (max-width: 400px) {
+  section .question {
+    padding-top: calc(55px / 1.5);
+  }
+}
+section section {
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+section section .answer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  -moz-transition: all 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: all 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+section section .answer.movable {
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  transform: translateX(-50px);
+  cursor: ew-resize;
+}
+section section .answer.movable .inner {
+  -moz-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+}
+section section .answer.movable article .content {
+  padding-right: 50px;
+}
+section section .answer.toggled {
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+section section .answer .inner {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: all 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: all 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+section section .answer .inner.show {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+section article {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+section article:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+section article aside {
+  width: 31.10368%;
+  float: left;
+  margin-right: 3.34448%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+@media screen and (max-width: 768px) {
+  section article aside {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+section article .content {
+  width: 65.55184%;
+  float: right;
+  margin-right: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  section article .content {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+section article:last-child ul {
+  margin: 0 0 40px 0;
+}
+section .overlay-img-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  color:rgba(2, 19, 26, 0.99);
+ 
+  cursor: pointer;
+}
+section .overlay-img-container picture, section .overlay-img-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+section .overlay-img-container img.ie9 {
+  display: none;
+}
+section .image-toggle {
+  position: absolute;
+  right: 90px;
+  top: 40px;
+  cursor: pointer;
+  z-index: 4;
+}
+@media screen and (max-width: 768px) {
+  section .image-toggle {
+    right: 0;
+    left: 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  section .image-toggle {
+    right: 0;
+    left: 10px;
+  }
+}
+section .image-toggle div {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  float: left;
+  margin: 0px 5px;
+  -moz-transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+section .image-toggle div:first-child {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+section .image-toggle div:last-child {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+}
+section .image-toggle:hover div:last-child {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+section .image-toggle.toggled div:first-child {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+}
+section .image-toggle.toggled div:last-child {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+section#thesinkingmoon section .answer {
+  background-color: rgba(2, 19, 26, 0.99);
+}
+section:nth-child(even) section .answer {
+  background-color: rgba(2, 19, 26, 0.99);
+}
+section:nth-child(odd) section .answer {
+  background-color: rgba(2, 19, 26, 0.99);
+}
+section .case-type {
+  -moz-transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+section .case-type .case-container {
+  margin-top: 40px;
+  display: none;
+}
+section .case-type.is-opened .case-container {
+  display: block;
+}
+section .case-type.faded li {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
+  opacity: 0.33;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+section.is-closed section {
+  display: none;
+  visibility: hidden;
+}
+section.is-opened section {
+  display: block;
+  visibility: visible;
+}
+section.is-opened .btn-open-closed {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 480px) {
+  section.is-opened .btn-open-closed {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 480px) {
+  section.is-opened .question:hover .btn-open-closed {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+section.is-opened:not(#thesinkingmoon) {
+  border-bottom: 0;
+}
+section .question:hover .btn-open-closed {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+@media screen and (max-width: 480px) {
+  section .question:hover .btn-open-closed {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+}
+
+html.ie9 img.ie9, html.lte9 img.ie9 {
+  display: block;
+}
+html.ie9 picture, html.lte9 picture {
+  display: none;
+}
+
+footer {
+  border: none;
+  margin-top: 100px;
+}
+footer a.logo {
+  margin-top: 0 !important;
+}
+@media screen and (max-width: 768px) {
+  footer a.logo {
+    margin-bottom: 40px;
+  }
+}
+.process
+{
+        width:100%;
+        height:100%;
+        background-image: url(images/process.jpg);
+        background-blend-mode: multiply;
+}
+
+
+#intro {
+  position: relative;
+  background-color: #dddddd;
+  height: calc(100vh - 50px);
+  width: 100%;
+  background-color: rgba(2, 19, 26, 0.99);
+}
+#intro .inner {
+  z-index: 2;
+}
+#intro h1.big, #intro .big.h1 {
+  width: 50%;
+}
+@media screen and (max-width: 480px) {
+  #intro h1.big, #intro .big.h1 {
+    width: 85%;
+  }
+}
+#intro .intro-question {
+  margin-top: 40px;
+}
+#intro .intro-question, #intro .intro-answer {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: opacity 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: opacity 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-transition: opacity 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.44s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#intro .intro-question.show, #intro .intro-answer.show {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+#intro .intro-answer {
+  cursor: pointer;
+  border: none;
+  text-decoration: underline;
+}
+#intro .intro-answer:hover {
+  border: none;
+  text-decoration: none;
+}
+#intro .img-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding-left: 70%;
+  overflow: hidden;
+  display: block;
+}
+#intro .img-container figure {
+  width: 30%;
+  position: absolute;
+
+}
+#intro .moon[data-id="1"] img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* If you ever want to ghost debug an element
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
+
+
